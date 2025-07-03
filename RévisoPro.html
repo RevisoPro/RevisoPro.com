@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RévisoProo</title>
+    <!-- Chargement de Tailwind CSS via CDN pour un usage rapide -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Configuration personnalisée de Tailwind pour la police Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased">
+
+    <!-- Section d'en-tête (Header) -->
+    <header class="bg-gradient-to-r from-green-500 to-emerald-600 text-white py-8 px-4 rounded-b-lg shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Bienvenue sur votre plateforme éducative !</h1>
+            <p class="text-xl md:text-2xl font-light">Ne manquez plus jamais une leçon, révisez efficacement et suivez les progrès de vos enfants.</p>
+        </div>
+    </header>
+
+    <!-- Barre de navigation (Navigation Bar) -->
+    <nav class="bg-gray-800 shadow-md py-3 px-4 sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-8">
+            <a href="#accueil" class="text-white hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg px-3 py-1 rounded-md">Accueil</a>
+            <a href="#eleves" class="text-white hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg px-3 py-1 rounded-md">Élèves</a>
+            <a href="#professeurs" class="text-white hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg px-3 py-1 rounded-md">Professeurs</a>
+            <a href="#parents" class="text-white hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg px-3 py-1 rounded-md">Parents</a>
+            <a href="#contact" class="text-white hover:text-green-300 transition duration-300 ease-in-out font-medium text-lg px-3 py-1 rounded-md">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Section d'accueil (Home Section) -->
+    <main class="container mx-auto mt-10 px-4">
+        <section id="accueil" class="bg-white p-8 rounded-xl shadow-lg mb-10">
+            <h2 class="text-3xl md:text-4xl font-semibold text-green-700 mb-6 text-center">Votre allié pour la réussite scolaire</h2>
+            <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto mb-8">
+                Notre plateforme est conçue pour offrir un accès facile et organisé aux leçons, permettant aux élèves de rattraper les cours manqués et de réviser efficacement. Les professeurs gèrent directement le contenu, et les parents peuvent suivre les progrès de leurs enfants en toute transparence.
+            </p>
+
+            <!-- Cartes de fonctionnalités (Feature Cards) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <div class="bg-green-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-green-800 mb-3">Leçons Manquées</h3>
+                    <p class="text-gray-700">Accédez instantanément à toutes les leçons manquées, mises à disposition directement par vos professeurs. Ne perdez plus le fil de vos cours !</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-green-800 mb-3">Révisions Approfondies</h3>
+                    <p class="text-gray-700">Des ressources complètes et à jour pour réviser toutes les matières. Les professeurs peuvent modifier les contenus pour une adaptation parfaite.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-green-800 mb-3">Suivi Parental</h3>
+                    <p class="text-gray-700">Chers parents, suivez en temps réel l'avancement de vos enfants, leurs progrès et les leçons qu'ils ont consultées.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Espace Élèves -->
+        <section id="eleves" class="bg-white p-8 rounded-xl shadow-lg mb-10">
+            <h2 class="text-3xl md:text-4xl font-semibold text-blue-700 mb-6 text-center">Espace Élèves</h2>
+            <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto mb-8">
+                Retrouvez ici toutes vos leçons, les exercices supplémentaires et les ressources pour vous aider à mieux comprendre et réviser. Un tableau de bord personnalisé vous attend !
+            </p>
+            <div class="text-center">
+                <a href="#" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    Accéder à l'espace élève
+                </a>
+            </div>
+        </section>
+
+        <!-- Section Espace Professeurs -->
+        <section id="professeurs" class="bg-white p-8 rounded-xl shadow-lg mb-10">
+            <h2 class="text-3xl md:text-4xl font-semibold text-purple-700 mb-6 text-center">Espace Professeurs</h2>
+            <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto mb-8">
+                Déposez et modifiez facilement vos leçons, ajoutez des ressources complémentaires et suivez l'engagement de vos élèves. Gérez votre contenu pédagogique en toute autonomie.
+            </p>
+            <div class="text-center">
+                <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    Accéder à l'espace professeur
+                </a>
+            </div>
+        </section>
+
+        <!-- Section Espace Parents -->
+        <section id="parents" class="bg-white p-8 rounded-xl shadow-lg mb-10">
+            <h2 class="text-3xl md:text-4xl font-semibold text-orange-700 mb-6 text-center">Espace Parents</h2>
+            <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto mb-8">
+                Consultez l'historique des leçons vues par votre enfant, suivez ses performances et restez informé de son parcours scolaire grâce à des rapports clairs et concis.
+            </p>
+            <div class="text-center">
+                <a href="#" class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    Accéder à l'espace parent
+                </a>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="bg-white p-8 rounded-xl shadow-lg mb-10">
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-700 mb-6 text-center">Contactez-nous</h2>
+            <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto mb-8">
+                Pour toute question, suggestion ou demande de support, n'hésitez pas à nous contacter. Nous sommes là pour vous aider à tirer le meilleur parti de la plateforme !
+            </p>
+            <div class="text-center text-lg">
+                <p class="mb-2">Email: <a href="mailto:contact@votrenomdeprojet.com" class="text-blue-500 hover:underline">revisopro@gmail.com</a></p>
+                <p>Téléphone: <a href="tel:+22500000000" class="text-blue-500 hover:underline">+225 0749308102</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page (Footer) -->
+    <footer class="bg-gray-900 text-white py-6 px-4 text-center rounded-t-lg shadow-inner">
+        <p class="text-sm">&copy; 2025 RévisoPro. Tous droits réservés.</p>
+        <p class="text-xs mt-1">Conçu avec passion pour l'éducation.</p>
+    </footer>
+
+</body>
+</html>
